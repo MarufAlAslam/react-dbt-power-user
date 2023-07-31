@@ -10,7 +10,7 @@ const Resources = () => {
     <div className="resources pb-[110px]">
       <div className="custom-container">
         <div className="text-center">
-          <h2 className="text-white text-[40px] font-bold mb-[48px]">
+          <h2 className="text-white md:text-[40px] text-2xl font-bold mb-[48px]">
             dbt-power-user Resources
           </h2>
 
