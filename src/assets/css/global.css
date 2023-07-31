@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    font-family: 'Noto Sans', sans-serif;
+}
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+body, html{
+    overflow-x: hidden;
+    background-color: #0A0A0E;
+}
+.custom-container{
+    max-width: 1240px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    background-image: url("../images/hero-bg.png");
+    background-size: 100%;
+    background-position: left;
+    padding: 30px 0;
+}
