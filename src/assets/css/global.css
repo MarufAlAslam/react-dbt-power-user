@@ -1,25 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
-*{
-    font-family: 'Noto Sans', sans-serif;
+* {
+  font-family: "Noto Sans", sans-serif;
 }
-.lato{
-    font-family: 'Lato', sans-serif;
+.lato {
+  font-family: "Lato", sans-serif;
 }
-body, html{
-    overflow-x: hidden;
-    background-color: #0A0A0E;
+body,
+html {
+  overflow-x: hidden;
+  background-color: #0a0a0e;
 }
-.custom-container{
-    max-width: 1240px;
-    padding: 0 15px;
-    margin: 0 auto;
+.custom-container {
+  max-width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* header */
-.header{
-    background-image: url("../images/hero-bg.png");
-    background-size: 100%;
-    background-position: left;
-    padding: 30px 0;
+.header {
+  background-image: linear-gradient(transparent, black),
+    url("../images/hero-bg.png");
+  background-size: 100%;
+  background-position: left;
+  padding: 30px 0;
+}
+
+/* hero */
+.title {
+  background: linear-gradient(233deg, #4de9d3 0%, #109df7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.links a:hover{
+    background-color: rgba(255,255,255,0.1);
 }
