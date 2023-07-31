@@ -39,3 +39,25 @@ html {
 .links a:hover{
     background-color: rgba(255,255,255,0.1);
 }
+
+/* trusted by */
+.trusted-by{
+    background: url("../images/trustedby.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.btn-circle-left {
+    position: absolute;
+    bottom: -100px;
+    left: 47%;
+    transform: translateX(-47%);
+}
+
+.btn-circle-right {
+    position: absolute;
+    bottom: -100px;
+    right: 47%;
+    transform: translateX(-47%);
+}
