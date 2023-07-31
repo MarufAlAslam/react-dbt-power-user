@@ -77,7 +77,7 @@ const Colums = () => {
           </div>
         </div>
 
-        <div className="column-item flex justify-between items-center mb-[140px]">
+        <div className="column-item flex justify-between items-center">
           <div className="md:w-1/2 w-full">
             <img src={ss4} className="w-full" alt="" />
           </div>

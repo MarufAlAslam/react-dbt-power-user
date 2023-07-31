@@ -15,7 +15,8 @@ html {
   background-color: #0a0a0e;
 }
 .custom-container {
-  max-width: 1240px;
+  width: 1240px;
+  max-width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
