@@ -47,42 +47,42 @@ const Header = () => {
               </h2>
 
               <div className="links mt-[36px]">
-                <Link
-                  to="/"
+                <a
+                  href="#col1"
                   className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
                     Instantly test your dbt query
                   </span>
-                </Link>
-                <Link
-                  to="/"
+                </a>
+                <a
+                  href="#col2"
                   className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
                     Instantly Quickly navigate your dbt project
                   </span>
-                </Link>
-                <Link
-                  to="/"
+                </a>
+                <a
+                  href="#col3"
                   className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
                     Click and execute common dbt commands
                   </span>
-                </Link>
-                <Link
-                  to="/"
+                </a>
+                <a
+                  href="#col4"
                   className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
                     Generate boilerplate dbt code
                   </span>
-                </Link>
+                </a>
               </div>
 
               <div className="mt-[48px] ">
@@ -95,7 +95,7 @@ const Header = () => {
               </div>
             </div>
             <div className="w-full md:w-[50%]">
-            <img src={sliderPlaceholder} alt="" />
+              <img src={sliderPlaceholder} alt="" />
             </div>
           </div>
         </section>

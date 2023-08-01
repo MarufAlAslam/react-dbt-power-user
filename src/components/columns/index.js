@@ -8,9 +8,12 @@ import ss4 from "../../assets/images/ss4.png";
 
 const Colums = () => {
   return (
-    <div className="columns py-[140px]">
+    <div className="columns pb-[140px]">
       <div className="custom-container">
-        <div className="column-item flex justify-between items-center mb-[140px]">
+        <div
+          id="col1"
+          className="column-item flex justify-between items-center pt-[140px]"
+        >
           <div className="md:w-1/2 w-full p-[114px]">
             <h2 className="lexend text-white text-[30px] font-bold mb-[10px]">
               Instantly test your dbt query
@@ -32,7 +35,10 @@ const Colums = () => {
           </div>
         </div>
 
-        <div className="column-item flex justify-between items-center mb-[140px]">
+        <div
+          id="col2"
+          className="column-item flex justify-between items-center pt-[140px]"
+        >
           <div className="md:w-1/2 w-full">
             <img src={ss2} className="w-full" alt="" />
           </div>
@@ -55,7 +61,10 @@ const Colums = () => {
           </div>
         </div>
 
-        <div className="column-item flex justify-between items-center mb-[140px]">
+        <div
+          id="col3"
+          className="column-item flex justify-between items-center pt-[140px]"
+        >
           <div className="md:w-1/2 w-full p-[114px]">
             <h2 className="lexend text-white text-[30px] font-bold mb-[10px]">
               Click and execute common dbt commands
@@ -77,7 +86,10 @@ const Colums = () => {
           </div>
         </div>
 
-        <div className="column-item flex justify-between items-center">
+        <div
+          id="col4"
+          className="column-item flex justify-between items-center pt-[140px]"
+        >
           <div className="md:w-1/2 w-full">
             <img src={ss4} className="w-full" alt="" />
           </div>
