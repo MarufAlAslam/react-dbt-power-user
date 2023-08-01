@@ -9,18 +9,45 @@ import tesimonial1 from "../../assets/images/testimonial1.png";
 import tesimonial2 from "../../assets/images/testimonial2.png";
 import tesimonial3 from "../../assets/images/testimonial3.png";
 import tesimonial4 from "../../assets/images/testimonial4.png";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
+  const [menuClass, setMenuClass] = React.useState("");
+
+  const toggleMenu = () => {
+    if (menuClass === "") {
+      setMenuClass("active");
+    } else {
+      setMenuClass("");
+    }
+  };
+
   const [activeSlide, setActiveSlide] = React.useState(0);
   const [index, setIndex] = React.useState(0);
   return (
     <div className="header">
       <div className="custom-container">
+        <div
+          className={`menu-bg ${menuClass === "active" && "active"}`}
+          onClick={toggleMenu}
+        ></div>
         <nav className="flex justify-between items-center">
           <Link to="/" className="logo">
             <img src={logo} className="logo" alt="" />
           </Link>
-          <ul className="flex justify-center items-center gap-[60px]">
+          <div className="mobile">
+            <button
+              onClick={toggleMenu}
+              className="menu-toggler px-5 py-3 rounded"
+            >
+              <FaBars className="text-white" />
+            </button>
+          </div>
+          <ul
+            className={`menu flex justify-center items-center gap-[60px] ${
+              menuClass === "active" && "active"
+            }`}
+          >
             <li>
               <Link to="/" className="text-white lato">
                 Resources
@@ -39,7 +66,7 @@ const Header = () => {
           </ul>
           <Link
             to="/"
-            className="border border-[#fff] text-[#11D588] text-lg py-[12px] px-[24px] rounded-full"
+            className="md:block hidden border border-[#fff] text-[#11D588] text-lg py-[12px] px-[24px] rounded-full"
           >
             Start for free
           </Link>
