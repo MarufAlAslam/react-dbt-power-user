@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Resources = () => {
   return (
-    <div className="resources pb-[110px]">
+    <div className="resources md:pb-[110px] pb-[60px]">
       <div className="custom-container">
         <div className="text-center">
           <h2 className="text-white md:text-[40px] text-2xl font-bold mb-[48px]">

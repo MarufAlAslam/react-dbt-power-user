@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import img1 from "../../assets/images/1.png";
 import img2 from "../../assets/images/2.png";
 import img3 from "../../assets/images/3.png";
@@ -17,6 +17,27 @@ import avatar1 from "../../assets/images/avatar1.png";
 import Carousel from "nuka-carousel";
 
 const TrustedBy = () => {
+  const [screenWidth, setScreenWidth] = React.useState();
+  const [slideCount, setSlideCount] = React.useState(5);
+  const [parners, setPartners] = React.useState(7);
+
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+  }, [screenWidth]);
+
+  useEffect(() => {
+    if (screenWidth < 768) {
+      setSlideCount(1);
+      setPartners(2);
+    } else if (screenWidth < 1024) {
+      setSlideCount(3);
+      setPartners(4);
+    } else {
+      setSlideCount(5);
+      setPartners(7);
+    }
+  }, [screenWidth]);
+
   const testimonials = [
     {
       id: 1,
@@ -74,45 +95,56 @@ const TrustedBy = () => {
     },
   ];
   return (
-    <div className="trusted-by pt-[100px] pb-[190px]">
+    <div className="trusted-by md:pt-[100px] pt-[60px] md:pb-[190px] pb-[150px]">
       <div className="custom-container">
-        <h2 className="text-white text-center md:text-[40px] text-2xl font-bold mb-[100px]">
+        <h2 className="text-white text-center md:text-[40px] text-xl font-bold md:mb-[100px] mb-[50px]">
           Trusted by Thousands of dbt Users
         </h2>
       </div>
 
-      <div className="flex justify-between items-center px-[15px] mb-[60px]">
-        <div className="item">
-          <img src={img1} alt="" />
+      <Carousel
+        slidesToShow={parners}
+        slidesToScroll={1}
+        autoplay={true}
+        wrapAround={true}
+        autoplayInterval={3000}
+        cellSpacing={30}
+        renderCenterLeftControls={({ previousSlide }) => null}
+        renderCenterRightControls={({ nextSlide }) => null}
+        renderBottomCenterControls={() => null}
+      >
+        <div className="item text-center flex justify-center items-center">
+          <img src={img1} className="mr-0" alt="" />
         </div>
-        <div className="item">
+        <div className="item text-center flex justify-center items-center">
           <img src={img2} alt="" />
         </div>
-        <div className="item">
+        <div className="item text-center flex justify-center items-center">
           <img src={img3} alt="" />
         </div>
-        <div className="item">
+        <div className="item text-center flex justify-center items-center">
           <img src={img4} alt="" />
         </div>
-        <div className="item">
+        <div className="item text-center flex justify-center items-center">
           <img src={img5} alt="" />
         </div>
-        <div className="item">
+        <div className="item text-center flex justify-center items-center">
           <img src={img6} alt="" />
         </div>
-        <div className="item">
+        <div className="item text-center flex justify-center items-center">
           <img src={img7} alt="" />
         </div>
-      </div>
+      </Carousel>
 
-      <div className="px-[15px]">
+      <div className="px-[15px] mt-[60px]">
         <Carousel
-          slidesToShow={5}
+          slidesToShow={slideCount}
           slidesToScroll={1}
           autoplay={true}
           wrapAround={true}
           autoplayInterval={2000}
           cellSpacing={30}
+          renderBottomCenterControls={() => null}
           renderCenterLeftControls={({ previousSlide }) => (
             <button
               onClick={previousSlide}

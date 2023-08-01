@@ -133,4 +133,14 @@ html {
   .resources * {
     text-align: center;
   }
+
+  .btn-circle-left {
+    left: 40%;
+  }
+  .btn-circle-right {
+    right: 30%;
+  }
+  .trusted-by {
+    background-size: cover;
+  }
 }

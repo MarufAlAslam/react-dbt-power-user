@@ -8,14 +8,14 @@ import ss4 from "../../assets/images/ss4.png";
 
 const Colums = () => {
   return (
-    <div className="columns pb-[140px]">
+    <div className="columns md:pb-[140px] pb-[70px]">
       <div className="custom-container">
         <div
           id="col1"
-          className="column-item flex justify-between items-center pt-[140px]"
+          className="column-item flex md:flex-row flex-col justify-between items-center md:pt-[140px] pt-[50px]"
         >
-          <div className="md:w-1/2 w-full p-[114px]">
-            <h2 className="lexend text-white text-[30px] font-bold mb-[10px]">
+          <div className="md:w-1/2 w-full md:p-[114px] pb-[40px] md:text-left text-center">
+            <h2 className="lexend text-white md:text-[30px] text-2xl font-bold mb-[10px]">
               Instantly test your dbt query
             </h2>
             <p className="text-[#ccc]">
@@ -24,7 +24,7 @@ const Colums = () => {
             <div className="mt-[48px] ">
               <Link
                 to="/"
-                className="bg-[#11D588] text-[#082247] text-lg py-[14px] px-[32px] rounded-full"
+                className="bg-[#11D588] block text-[#082247] md:text-lg text-sm md:py-[14px] py-[10px] md:px-[32px] px-[20px] rounded-full"
               >
                 Install dbt Power User for VS Code
               </Link>
@@ -41,13 +41,13 @@ const Colums = () => {
 
         <div
           id="col2"
-          className="column-item flex justify-between items-center pt-[140px]"
+          className="column-item flex md:flex-row flex-col-reverse justify-between items-center md:pt-[140px] pt-[50px]"
         >
           <div className="md:w-1/2 w-full">
             <img src={ss2} className="w-full" alt="" />
           </div>
-          <div className="md:w-1/2 w-full p-[114px]">
-            <h2 className="lexend text-white text-[30px] font-bold mb-[10px]">
+          <div className="md:w-1/2 w-full md:p-[114px] pb-[40px] md:text-left text-center">
+            <h2 className="lexend text-white md:text-[30px] text-2xl font-bold mb-[10px]">
               Quickly navigate your dbt project
             </h2>
             <p className="text-[#ccc]">
@@ -57,7 +57,7 @@ const Colums = () => {
             <div className="mt-[48px] ">
               <Link
                 to="/"
-                className="bg-[#11D588] text-[#082247] text-lg py-[14px] px-[32px] rounded-full"
+                className="bg-[#11D588] block text-[#082247] md:text-lg text-sm md:py-[14px] py-[10px] md:px-[32px] px-[20px] rounded-full"
               >
                 Install dbt Power User for VS Code
               </Link>
@@ -67,10 +67,10 @@ const Colums = () => {
 
         <div
           id="col3"
-          className="column-item flex justify-between items-center pt-[140px]"
+          className="column-item flex md:flex-row flex-col justify-between items-center md:pt-[140px] pt-[50px]"
         >
-          <div className="md:w-1/2 w-full p-[114px]">
-            <h2 className="lexend text-white text-[30px] font-bold mb-[10px]">
+          <div className="md:w-1/2 w-full md:p-[114px] pb-[40px] md:text-left text-center">
+            <h2 className="lexend text-white md:text-[30px] text-2xl font-bold mb-[10px]">
               Click and execute common dbt commands
             </h2>
             <p className="text-[#ccc]">
@@ -79,7 +79,7 @@ const Colums = () => {
             <div className="mt-[48px] ">
               <Link
                 to="/"
-                className="bg-[#11D588] text-[#082247] text-lg py-[14px] px-[32px] rounded-full"
+                className="bg-[#11D588] block text-[#082247] md:text-lg text-sm md:py-[14px] py-[10px] md:px-[32px] px-[20px] rounded-full"
               >
                 Install dbt Power User for VS Code
               </Link>
@@ -92,13 +92,13 @@ const Colums = () => {
 
         <div
           id="col4"
-          className="column-item flex justify-between items-center pt-[140px]"
+          className="column-item flex md:flex-row flex-col-reverse justify-between items-center md:pt-[140px] pt-[50px]"
         >
           <div className="md:w-1/2 w-full">
             <img src={ss4} className="w-full" alt="" />
           </div>
-          <div className="md:w-1/2 w-full p-[114px]">
-            <h2 className="lexend text-white text-[30px] font-bold mb-[10px]">
+          <div className="md:w-1/2 w-full md:p-[114px] pb-[40px] md:text-left text-center">
+            <h2 className="lexend text-white md:text-[30px] text-2xl font-bold mb-[10px]">
               Generate boilerplate dbt code
             </h2>
             <p className="text-[#ccc]">
@@ -107,7 +107,7 @@ const Colums = () => {
             <div className="mt-[48px] ">
               <Link
                 to="/"
-                className="bg-[#11D588] text-[#082247] text-lg py-[14px] px-[32px] rounded-full"
+                className="bg-[#11D588] block text-[#082247] md:text-lg text-sm md:py-[14px] py-[10px] md:px-[32px] px-[20px] rounded-full"
               >
                 Install dbt Power User for VS Code
               </Link>

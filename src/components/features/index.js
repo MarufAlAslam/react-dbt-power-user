@@ -2,7 +2,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <div className="pb-[140px]">
+    <div className="md:pb-[140px] pb-[60px]">
       <div className="custom-container">
         <div className="text-center">
           <h2 className="md:text-[40px] text-2xl font-bold text-white mb-[56px]">
