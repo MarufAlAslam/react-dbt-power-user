@@ -120,4 +120,17 @@ html {
   .menu-bg.active {
     transform: translateX(0);
   }
+
+  .title {
+    font-size: 35px;
+  }
+  .resources .flex {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .resources * {
+    text-align: center;
+  }
 }

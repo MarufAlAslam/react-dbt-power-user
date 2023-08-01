@@ -73,11 +73,11 @@ const Header = () => {
         </nav>
 
         {/* hero */}
-        <section className="hero pt-[150px] pb-[140px]">
+        <section className="hero md:pt-[150px] pt-8 md:pb-[140px]">
           <div className="flex md:flex-row flex-col justify-between items-center">
             <div className="w-full md:w-[50%]">
               <h1 className="title">Do dbt Like Pros</h1>
-              <h2 className="subtitle text-2xl text-white font-[600]">
+              <h2 className="subtitle md:text-2xl text-lg text-white font-[600]">
                 dbt Power User VS Code Extension
               </h2>
 
@@ -132,13 +132,16 @@ const Header = () => {
                 </a>
               </div>
 
-              <div className="mt-[48px] ">
+              <div className="mt-[48px] md:text-left text-center">
                 <Link
                   to="/"
-                  className="bg-[#11D588] text-[#082247] text-lg py-[14px] px-[32px] rounded-full"
+                  className="bg-[#11D588] text-[#082247] md:text-lg inline-flex mb-4 py-[14px] px-[32px] rounded-full"
                 >
                   Install dbt Power User for VS Code
                 </Link>
+                <p className="text-sm text-white opacity-[0.8] md:mb-0 mb-12">
+                  or download from VS Code Marketplace
+                </p>
               </div>
             </div>
             <div className="w-full md:w-[50%]">

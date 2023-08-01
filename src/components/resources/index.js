@@ -48,8 +48,12 @@ const Resources = () => {
               </div>
             </div>
             <div className="card bg-[#0C171F] py-[50px] px-[24px] rounded-[18px]">
-              <img src={github} className="mb-[28px]" alt="" />
-              <p className="text-lg text-white text-left opacity-50 mb-[130px]">
+              <img
+                src={github}
+                className="mb-[28px] block md:mr-auto md:ml-0 mx-auto"
+                alt=""
+              />
+              <p className="text-lg text-white text-left opacity-50 md:mb-[130px] mb-[20px]">
                 Interested in contributing or reporting a bug? Join Us on
                 GitHub.
               </p>
@@ -76,7 +80,7 @@ const Resources = () => {
                   Slack channel in dbt workspace
                 </p>
               </div>
-              <p className="text-lg text-white text-left opacity-50 mb-[130px]">
+              <p className="text-lg text-white text-left opacity-50 md:mb-[130px] mb-[20px]">
                 Get help from users in “tools-dbt-power-user” channel in dbt
                 Slack community!
               </p>
