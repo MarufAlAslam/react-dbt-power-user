@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import ss1 from "../../assets/images/ss1.png";
+import ss1 from "../../assets/images/visualize-result-set.gif";
 import ss2 from "../../assets/images/ss2.png";
 import ss3 from "../../assets/images/ss3.png";
 import ss4 from "../../assets/images/ss4.png";
@@ -31,7 +31,11 @@ const Colums = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full">
-            <img src={ss1} className="w-full" alt="" />
+            <img
+              src={ss1}
+              className="w-full rounded-[30px] border-2 border-white"
+              alt=""
+            />
           </div>
         </div>
 

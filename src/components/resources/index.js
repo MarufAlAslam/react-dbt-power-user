@@ -24,7 +24,11 @@ const Resources = () => {
                   </span>
                 </div>
 
-                <Link className="bg-[#164C64] rounded-full px-[24px] py-[8px]">
+                <Link
+                  to={"https://github.com/innoverio/vscode-dbt-power-user"}
+                  target="_blank"
+                  className="bg-[#164C64] rounded-full px-[24px] py-[8px]"
+                >
                   Open
                 </Link>
               </div>
@@ -39,45 +43,56 @@ const Resources = () => {
                 </div>
 
                 <Link className="bg-[#164C64] rounded-full px-[24px] py-[8px]">
-                  Watch now
+                  Coming Soon
                 </Link>
               </div>
             </div>
             <div className="card bg-[#0C171F] py-[50px] px-[24px] rounded-[18px]">
               <img src={github} className="mb-[28px]" alt="" />
               <p className="text-lg text-white text-left opacity-50 mb-[130px]">
-              Interested in contributing or reporting a bug? 
-Join Us on GitHub. 
+                Interested in contributing or reporting a bug? Join Us on
+                GitHub.
               </p>
               <div className="flex justify-between items-center">
                 <div className="flex justify-start items-center gap-[10px]">
                   <span className="text-xl text-white font-[500]">
-                  Open source Github repository
+                    Open source Github repository
                   </span>
                 </div>
 
-                <Link className="bg-[#164C64] rounded-full px-[24px] py-[8px]">
-                 Open
+                <Link
+                  to="https://github.com/innoverio/vscode-dbt-power-user"
+                  target="_blank"
+                  className="bg-[#164C64] rounded-full px-[24px] py-[8px]"
+                >
+                  Open
                 </Link>
               </div>
             </div>
             <div className="card bg-[#0C171F] py-[50px] px-[24px] rounded-[18px] h-full">
               <div className="flex justify-start items-center gap-[24px] mb-[28px]">
                 <img src={slack} alt="" />
-                <p className="text-2xl text-white">Slack channel in dbt workspace</p>
+                <p className="text-2xl text-white">
+                  Slack channel in dbt workspace
+                </p>
               </div>
               <p className="text-lg text-white text-left opacity-50 mb-[130px]">
-              Get help from users in “tools-dbt-power-user” channel in dbt Slack community!
+                Get help from users in “tools-dbt-power-user” channel in dbt
+                Slack community!
               </p>
               <div className="flex justify-between items-center">
                 <div className="flex justify-start items-center gap-[10px]">
                   <span className="text-xl text-white font-[500]">
-                  Connect and Collaborate
+                    Connect and Collaborate
                   </span>
                 </div>
 
-                <Link className="bg-[#164C64] rounded-full px-[24px] py-[8px]">
-                 Join
+                <Link
+                  to={"https://getdbt.slack.com/archives/C05KPDGRMDW"}
+                  target="_blank"
+                  className="bg-[#164C64] rounded-full px-[24px] py-[8px]"
+                >
+                  Join
                 </Link>
               </div>
             </div>
