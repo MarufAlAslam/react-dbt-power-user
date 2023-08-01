@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Lexend:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;600;700;800;900&display=swap");
 
 * {
   font-family: "Noto Sans", sans-serif;
@@ -6,8 +6,8 @@
 .lato {
   font-family: "Lato", sans-serif;
 }
-.lexend{
-    font-family: 'Lexend', sans-serif;
+.lexend {
+  font-family: "Lexend", sans-serif;
 }
 body,
 html {
@@ -40,28 +40,28 @@ html {
   font-weight: 700;
 }
 
-.links a:hover{
-    background-color: rgba(255,255,255,0.1);
+.links a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* trusted by */
-.trusted-by{
-    background: url("../images/trustedby.png");
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+.trusted-by {
+  background: url("../images/trustedby.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .btn-circle-left {
-    position: absolute;
-    bottom: -100px;
-    left: 47%;
-    transform: translateX(-47%);
+  position: absolute;
+  bottom: -100px;
+  left: 46%;
+  transform: translateX(-47%);
 }
 
 .btn-circle-right {
-    position: absolute;
-    bottom: -100px;
-    right: 47%;
-    transform: translateX(-47%);
+  position: absolute;
+  bottom: -100px;
+  right: 46%;
+  transform: translateX(-47%);
 }
