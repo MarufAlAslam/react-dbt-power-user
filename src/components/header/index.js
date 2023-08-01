@@ -2,9 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 import check from "../../assets/images/check.svg";
-import sliderPlaceholder from "../../assets/images/slider-placeholder.png";
+// import sliderPlaceholder from "../../assets/images/slider-placeholder.png";
+import Carousel from "nuka-carousel";
+
+import tesimonial1 from "../../assets/images/testimonial1.png";
+import tesimonial2 from "../../assets/images/testimonial2.png";
+import tesimonial3 from "../../assets/images/testimonial3.png";
+import tesimonial4 from "../../assets/images/testimonial4.png";
 
 const Header = () => {
+  const [activeSlide, setActiveSlide] = React.useState(0);
+  const [index, setIndex] = React.useState(0);
   return (
     <div className="header">
       <div className="custom-container">
@@ -48,8 +56,11 @@ const Header = () => {
 
               <div className="links mt-[36px]">
                 <a
+                  onMouseEnter={() => setIndex(0)}
                   href="#col1"
-                  className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
+                  className={`inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md ${
+                    activeSlide === 0 && "active"
+                  }`}
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
@@ -57,8 +68,11 @@ const Header = () => {
                   </span>
                 </a>
                 <a
+                  onMouseEnter={() => setIndex(1)}
                   href="#col2"
-                  className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
+                  className={`inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md ${
+                    activeSlide === 1 && "active"
+                  }`}
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
@@ -66,8 +80,11 @@ const Header = () => {
                   </span>
                 </a>
                 <a
+                  onMouseEnter={() => setIndex(2)}
                   href="#col3"
-                  className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
+                  className={`inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md ${
+                    activeSlide === 2 && "active"
+                  }`}
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
@@ -75,8 +92,11 @@ const Header = () => {
                   </span>
                 </a>
                 <a
+                  onMouseEnter={() => setIndex(3)}
                   href="#col4"
-                  className="inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md"
+                  className={`inline-flex justify-start items-center gap-[8px] p-[8px] rounded-md ${
+                    activeSlide === 3 && "active"
+                  }`}
                 >
                   <img src={check} className="check" alt="" />{" "}
                   <span className="text-white opacity-[0.8]">
@@ -95,7 +115,33 @@ const Header = () => {
               </div>
             </div>
             <div className="w-full md:w-[50%]">
-              <img src={sliderPlaceholder} alt="" />
+              <Carousel
+                autoplay={true}
+                slideIndex={index}
+                autoplayInterval={5000}
+                pauseOnHover={false}
+                pauseOnFocus={false}
+                speed={1000}
+                afterSlide={(slideIndex) => setActiveSlide(slideIndex)}
+                dragging={false}
+                wrapAround={true}
+                renderCenterLeftControls={({ previousSlide }) => null}
+                renderCenterRightControls={({ nextSlide }) => null}
+                renderBottomCenterControls={null}
+              >
+                <div className="slider-item">
+                  <img src={tesimonial1} className="w-full" alt="" />
+                </div>
+                <div className="slider-item">
+                  <img src={tesimonial2} className="w-full" alt="" />
+                </div>
+                <div className="slider-item">
+                  <img src={tesimonial3} className="w-full" alt="" />
+                </div>
+                <div className="slider-item">
+                  <img src={tesimonial4} className="w-full" alt="" />
+                </div>
+              </Carousel>
             </div>
           </div>
         </section>

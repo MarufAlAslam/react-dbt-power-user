@@ -41,8 +41,14 @@ html {
   font-weight: 700;
 }
 
-.links a:hover {
+.links a:hover,
+.links a.active {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.links a.active span,
+.links a:hover span {
+  color: #11d588;
 }
 
 /* trusted by */
