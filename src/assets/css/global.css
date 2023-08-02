@@ -85,7 +85,7 @@ html {
     display: block;
     width: 100%;
     height: 100vh;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: #0a0a0ea6;
     position: fixed;
     top: 0;
     left: 0;
@@ -100,7 +100,7 @@ html {
     align-items: flex-start;
     padding: 50px;
     gap: 15px;
-    background-color: white;
+    background-color: #0a0a0e;
     width: 70%;
     position: fixed;
     top: 0;
@@ -112,7 +112,7 @@ html {
   }
 
   .menu a {
-    color: black;
+    color: white;
     font-size: 22px;
   }
 
