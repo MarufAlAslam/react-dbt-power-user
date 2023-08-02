@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import ss1 from "../../assets/images/visualize-result-set.gif";
-import ss2 from "../../assets/images/ss2.png";
-import ss3 from "../../assets/images/ss3.png";
-import ss4 from "../../assets/images/ss4.png";
+import ss2 from "../../assets/images/2.gif";
+import ss3 from "../../assets/images/3.gif";
+import ss4 from "../../assets/images/4.gif";
 
 const Colums = () => {
   return (
@@ -33,7 +33,7 @@ const Colums = () => {
           <div className="md:w-1/2 w-full">
             <img
               src={ss1}
-              className="w-full rounded-[30px] border-2 border-white"
+              className="w-full rounded-[30px] border-2 border-[#59697966]"
               alt=""
             />
           </div>
@@ -44,7 +44,11 @@ const Colums = () => {
           className="column-item flex md:flex-row flex-col-reverse justify-between items-center md:pt-[140px] pt-[50px]"
         >
           <div className="md:w-1/2 w-full">
-            <img src={ss2} className="w-full" alt="" />
+            <img
+              src={ss2}
+              className="w-full border-2 border-[#59697966] rounded-[30px]"
+              alt=""
+            />
           </div>
           <div className="md:w-1/2 w-full md:p-[114px] pb-[40px] md:text-left text-center">
             <h2 className="lexend text-white md:text-[30px] text-2xl font-bold mb-[10px]">
@@ -86,7 +90,11 @@ const Colums = () => {
             </div>
           </div>
           <div className="md:w-1/2 w-full">
-            <img src={ss3} className="w-full" alt="" />
+            <img
+              src={ss3}
+              className="w-full border-2 border-[#59697966] rounded-[30px]"
+              alt=""
+            />
           </div>
         </div>
 
@@ -95,7 +103,11 @@ const Colums = () => {
           className="column-item flex md:flex-row flex-col-reverse justify-between items-center md:pt-[140px] pt-[50px]"
         >
           <div className="md:w-1/2 w-full">
-            <img src={ss4} className="w-full" alt="" />
+            <img
+              src={ss4}
+              className="w-full border-2 border-[#59697966] rounded-[30px]"
+              alt=""
+            />
           </div>
           <div className="md:w-1/2 w-full md:p-[114px] pb-[40px] md:text-left text-center">
             <h2 className="lexend text-white md:text-[30px] text-2xl font-bold mb-[10px]">

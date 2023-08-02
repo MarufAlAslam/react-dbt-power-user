@@ -44,7 +44,7 @@ const Header = () => {
             </button>
           </div>
           <ul
-            className={`menu flex justify-center items-center gap-[60px] ${
+            className={`menu flex justify-center items-center md:pl-20 gap-[60px] ${
               menuClass === "active" && "active"
             }`}
           >
@@ -66,9 +66,9 @@ const Header = () => {
           </ul>
           <Link
             to="/"
-            className="md:block hidden border border-[#fff] text-[#11D588] text-lg py-[12px] px-[24px] rounded-full"
+            className="md:block hidden border border-[#fff] text-[#11D588] py-[12px] px-[24px] rounded-full"
           >
-            Start for free
+            Install dbt Power User for VS Code
           </Link>
         </nav>
 
