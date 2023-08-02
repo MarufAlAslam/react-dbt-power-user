@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import img1 from "../../assets/images/1.png";
-import img2 from "../../assets/images/2.png";
-import img3 from "../../assets/images/3.png";
-import img4 from "../../assets/images/4.png";
-import img5 from "../../assets/images/5.png";
-import img6 from "../../assets/images/6.png";
-import img7 from "../../assets/images/7.png";
+// import img1 from "../../assets/images/1.png";
+// import img2 from "../../assets/images/2.png";
+// import img3 from "../../assets/images/3.png";
+// import img4 from "../../assets/images/4.png";
+// import img5 from "../../assets/images/5.png";
+// import img6 from "../../assets/images/6.png";
+// import img7 from "../../assets/images/7.png";
 
 import left from "../../assets/images/left.svg";
 import right from "../../assets/images/right.svg";
@@ -19,7 +19,7 @@ import Carousel from "nuka-carousel";
 const TrustedBy = () => {
   const [screenWidth, setScreenWidth] = React.useState();
   const [slideCount, setSlideCount] = React.useState(5);
-  const [parners, setPartners] = React.useState(7);
+  // const [parners, setPartners] = React.useState(7);
 
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -28,13 +28,13 @@ const TrustedBy = () => {
   useEffect(() => {
     if (screenWidth < 768) {
       setSlideCount(1);
-      setPartners(2);
+      // setPartners(2);
     } else if (screenWidth < 1024) {
       setSlideCount(3);
-      setPartners(4);
+      // setPartners(4);
     } else {
       setSlideCount(5);
-      setPartners(7);
+      // setPartners(7);
     }
   }, [screenWidth]);
 
@@ -95,14 +95,17 @@ const TrustedBy = () => {
     },
   ];
   return (
-    <div className="trusted-by md:pt-[100px] pt-[60px] md:pb-[190px] pb-[150px]">
+    <div
+      className="trusted-by md:pt-[100px] pt-[60px] md:pb-[190px] pb-[150px]"
+      id="testimonials"
+    >
       <div className="custom-container">
         <h2 className="text-white text-center md:text-[40px] text-xl font-bold md:mb-[100px] mb-[50px]">
           Trusted by Thousands of dbt Users
         </h2>
       </div>
 
-      <Carousel
+      {/* <Carousel
         slidesToShow={parners}
         slidesToScroll={1}
         autoplay={true}
@@ -134,7 +137,7 @@ const TrustedBy = () => {
         <div className="item text-center flex justify-center items-center">
           <img src={img7} alt="" />
         </div>
-      </Carousel>
+      </Carousel> */}
 
       <div className="px-[15px] mt-[60px]">
         <Carousel

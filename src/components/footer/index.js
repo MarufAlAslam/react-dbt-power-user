@@ -16,10 +16,16 @@ const Footer = () => {
           </Link>
 
           <div className="flex justify-end items-center gap-[16px]">
-            <Link to="/">
+            <Link
+              to="https://github.com/innoverio/vscode-dbt-power-user"
+              target="_blank"
+            >
               <img src={github} alt="" />
             </Link>
-            <Link to="/">
+            <Link
+              to="https://getdbt.slack.com/archives/C05KPDGRMDW"
+              target="_blank"
+            >
               <img src={slack} alt="" />
             </Link>
           </div>

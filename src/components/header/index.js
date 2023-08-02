@@ -49,19 +49,19 @@ const Header = () => {
             }`}
           >
             <li>
-              <Link to="/" className="text-white lato">
+              <a href="#resources" className="text-white lato">
                 Resources
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/" className="text-white lato">
+              <a href="#features" className="text-white lato">
                 Features
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/" className="text-white lato">
+              <a href="#testimonials" className="text-white lato">
                 Testimonials
-              </Link>
+              </a>
             </li>
           </ul>
           <Link
