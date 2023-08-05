@@ -41,57 +41,67 @@ const TrustedBy = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Laércio da Silva",
+      name: "Guilherme da Silva",
       designation: "Product Designer",
       avatar: avatar1,
       stars: 5,
-      review:
-        "Improves a lot the productivity. You don't need to use other tool to work for dbt, you can write, test, debug each model and observe all interactions directly in VS Code.",
+      review: "Improve a lot of the productivity ",
     },
     {
       id: 2,
-      name: "Laércio da Silva",
+      name: "Michael Weikman",
       designation: "Product Designer",
       avatar: avatar1,
       stars: 5,
-      review:
-        "Improves a lot the productivity. You don't need to use other tool to work for dbt, you can write, test, debug each model and observe all interactions directly in VS Code.",
+      review: "Query / complie preview are great QOL features that I use often",
     },
     {
       id: 3,
-      name: "Laércio da Silva",
+      name: "Daniel Ladd ",
       designation: "Product Designer",
       avatar: avatar1,
       stars: 5,
-      review:
-        "Improves a lot the productivity. You don't need to use other tool to work for dbt, you can write, test, debug each model and observe all interactions directly in VS Code.",
+      review: "Viewing upstream/downstream models provides a lot of context",
     },
     {
       id: 4,
-      name: "Laércio da Silva",
+      name: "Anthony Alvarez",
       designation: "Product Designer",
       avatar: avatar1,
       stars: 5,
-      review:
-        "Improves a lot the productivity. You don't need to use other tool to work for dbt, you can write, test, debug each model and observe all interactions directly in VS Code.",
+      review: " Love the functionality to drill into model references",
     },
     {
       id: 5,
-      name: "Laércio da Silva",
+      name: "Graham Carman",
       designation: "Product Designer",
       avatar: avatar1,
       stars: 5,
-      review:
-        "Improves a lot the productivity. You don't need to use other tool to work for dbt, you can write, test, debug each model and observe all interactions directly in VS Code.",
+      review: " Run parent / child models with a click of button",
     },
     {
       id: 6,
-      name: "Laércio da Silva",
+      name: "Boris Gracevic ",
       designation: "Product Designer",
       avatar: avatar1,
       stars: 5,
-      review:
-        "Improves a lot the productivity. You don't need to use other tool to work for dbt, you can write, test, debug each model and observe all interactions directly in VS Code.",
+      review: "Best tool I have used for vs code",
+    },
+    {
+      id: 7,
+      name: "Juan Ramos",
+      designation: "Product Designer",
+      avatar: avatar1,
+      stars: 5,
+      review: "Makes dbt development so much easier",
+    },
+    {
+      id: 8,
+      name: "Jacon Matson",
+      designation: "Product Designer",
+      avatar: avatar1,
+      stars: 5,
+      review: "Lots of great QOL features",
     },
   ];
   return (
@@ -167,25 +177,34 @@ const TrustedBy = () => {
         >
           {testimonials.map((item) => (
             <div
-              className="item bg-[#0F2632] p-[30px] rounded-[20px]"
+              className="item bg-[#0F2632] p-[30px] rounded-[20px] h-full flex flex-col justify-between"
               key={item.id}
             >
-              <div className="flex justify-start items-center gap-[3px] mb-[16px]">
-                {Array(item.stars)
-                  .fill()
-                  .map((_, i) => (
-                    <FaStar className="text-yellow-500" />
-                  ))}
+              <div className="">
+                <div className="flex justify-start items-center gap-[3px] mb-[16px]">
+                  {Array(item.stars)
+                    .fill()
+                    .map((_, i) => (
+                      <FaStar className="text-yellow-500" />
+                    ))}
+                </div>
+                <p className="text-white opacity-[0.8] mb-[45px]">
+                  {item.review}
+                </p>
               </div>
-              <p className="text-white opacity-[0.8] mb-[45px]">
-                This is so solid! LOTS of features. I especially like the
-                ability to see parent / child models in a sidebar, and run them
-                with the click of a button.
-              </p>
 
               <div className="flex justify-start items-center gap-[15px]">
-                <div className="avatar">
-                  <img src={item.avatar} alt="" />
+                <div className="avatar min-w-[50px] h-[50px] bg-[#E7E8EA] rounded-full flex justify-center items-center">
+                  {/* first laters of each word of the name */}
+                  {item.name &&
+                    item.name.split(" ").map((word, index) => (
+                      <span
+                        className="uppercase text-xl font-bold text-[#9D9D9D]"
+                        key={index}
+                      >
+                        {word[0]}
+                      </span>
+                    ))}
                 </div>
 
                 <div className="text-white">
