@@ -143,4 +143,20 @@ html {
   .trusted-by {
     background-size: cover;
   }
+  .testimonials {
+    width: 95%;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+  .card-info {
+    display: none;
+  }
+  .card-bg, .testimonial-card .card{
+    min-height: 450px;
+  }
+  .testimonials .holder{
+    max-width: 100%;
+  }
 }

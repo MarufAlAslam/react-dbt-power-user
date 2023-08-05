@@ -283,11 +283,11 @@ const Header = () => {
 
               <div className="testimonial-card">
                 <div className="card relative">
-                  <img src={testimonialCard} className="w-full h-full" alt="" />
+                  <img src={testimonialCard} className="w-full h-full card-bg" alt="" />
 
                   <img
                     src={tm}
-                    className="absolute -right-[50px] top-[50%] -translate-y-[50%]"
+                    className="absolute -right-[50px] top-[50%] -translate-y-[50%] card-info"
                     alt=""
                   />
 
@@ -295,7 +295,7 @@ const Header = () => {
                     {testimonials[activeSlide].items.map((item, index) => (
                       <div
                         key={index}
-                        className={`${index === 1 ? "ml-auto" : "mr-auto"}  max-w-[80%]`}
+                        className={`${index === 1 ? "ml-auto" : "mr-auto"}  max-w-[80%] holder`}
                       >
                         <div className="flex justify-start items-start bg-white rounded-[12px] shadow p-[12px] gap-[12px]">
                           <div className="avatar min-w-[94px] h-[94px] bg-[#E7E8EA] rounded-[12px] flex justify-center items-center">
